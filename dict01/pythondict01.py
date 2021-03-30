@@ -46,3 +46,10 @@ switch["password"] = "qwerty"
 print( switch.keys() )
 print( switch.values() )
 
+listA = ["one", "two", "three"]
+listB = ["four", "five", "six"]
+listC = listA.extend(listB)
+print(listA)
+print(listB)
+print(listC)
+# you cannot assign the value of a function
