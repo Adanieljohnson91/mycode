@@ -1,0 +1,45 @@
+[{
+  "question": "We are here to help you determine whether or not the problem is your problem, would you like to continue?",
+  "answers": "1) Yes.\n2) No\n",
+  "routes": [1,10]
+},{
+  "question": "Is this your problem?",
+  "answers": "1) Yes.\n2) No.\n3) I'm not sure?",
+  "routes": [2,6,8]
+},{
+  "question": "Is this a problem a person or thing? ",
+  "answers": "1)a Person\n2) A thing\n3) Sometimes, yes",
+  "routes": [3,8,7]
+},{
+  "question": "Are you married to it?",
+  "answers": "1) Yes\n2) No.",
+  "routes": [4, 6]
+},{
+  "question": "Do you want to be?",
+  "answers": "1)Yes.\n2)No. ",
+  "routes": [5,9]
+},{
+  "question": "Whelp, sucks to suck, this is your problem, get away before it rubs off on me",
+  "answers": "",
+  "routes": []
+},{
+  "question": "Dang right, its not your problem dog, move on?",
+  "answers": "",
+  "routes": []
+},{
+  "question": "Sometimes? what the heck does that mean? Yes or No?",
+  "answers": "1) Yes.\n 2) No",
+  "routes": [8,3]
+},{
+  "question": "Does it pay you well?",
+  "answers": "1) Yes, stupid money.\n 2) Nope",
+  "routes": [9,3]
+},{
+  "question": "Ok, well we need to come up with a game plan, this is your problem, but if your willing to work, it doesnt need to be.",
+  "answers": "",
+  "routes": []
+},{
+  "question": "Exiting: ",
+  "answers": "",
+  "routes": []
+}]
