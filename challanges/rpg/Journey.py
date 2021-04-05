@@ -5,11 +5,11 @@ class Journey:
 
     def __init__(self, hero):
         self.hero = hero
-        self.bed = Area("Bed", ["blanket"], [], "Wait, it was all just a dream")
-        self.evil_lair = Area("Evil Lair", ["hostage folk", "Sword of Destiny"], [kagnor], f"Ahhh, {self.hero.name}, you have some at last...")
-        self.dark_forest = Area("Dark Forest", ["torch", "potion", "Flame Storm"], [pumpkinMan, goblin, goblin], "The dark forest is dark, only in darkness will you gain the thirst to seek the light")
-        self.outside = Area("Outside", ["not hostage folk", "necklace of destiny"], [skeleton], "The sky is dark, story story story")
-        self.home = Area("Home", ["map"], [], "Some Story")
+        self.bed = Area("Bed", ["blanket"], [], "Kagnor raises from the dead and smacks you in the face... you wake up~~~~~~Wait, it was all just a dream~~~~~")
+        self.evil_lair = Area("Evil Lair", ["hostage folk", "Sword of Destiny"], [kagnor], f"Ahhh It is i Kagnor, Lord of Darkness, You will fall here today {self.hero.name}...(lover-folk-screams in the background")
+        self.dark_forest = Area("Dark Forest", ["torch", "potion", "Flame Storm"], [pumpkinMan, goblin, goblin], "You have done well, {self.name}The dark forest is dark, only in darkness will you gain the thirst to seek the light")
+        self.outside = Area("Outside", ["not hostage folk", "necklace of destiny"], [skeleton], "AHHHHH, Kagnor has taken the love of your life, you are now regretting taking you trip outside... note to self, ")
+        self.home = Area("Home", ["map"], [], "Its a beautiful day, lets go for a trip... Check out the room see if theres anythin that may help you on your journey")
         self.createJourney()
         self.welcome()
         self.startJourney(self.home)
@@ -24,7 +24,7 @@ class Journey:
         self.home.addSurrounding(self.outside)
         self.outside.addSurrounding(self.dark_forest)
         self.dark_forest.addSurrounding(self.evil_lair)
-        self.dark_forest.addSurrounding(self.bed)
+        self.evil_lair.addSurrounding(self.bed)
 
     def startJourney(self, area):
         print(area.story)
